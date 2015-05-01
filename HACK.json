@@ -19,24 +19,21 @@
 			"id": "f4898fec-a2ae-a25c-1849-92093c8c7455",
 			"headers": "",
 			"url": "http://www.google.com",
-			"pathVariables": {},
 			"preRequestScript": "",
+			"pathVariables": {},
 			"method": "GET",
-			"collectionId": "956d4535-63e2-ca26-5bce-fe21516f9d9c",
 			"data": [],
-			"dataMode": "raw",
-			"name": "test1",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1430503513139,
+			"dataMode": "params",
 			"version": 2,
-			"responses": [],
-			"tests": "tests['valid integer'] = 1 === 1;",
+			"tests": "tests['valid integer'] = 2 === 2;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"collectionOwner": 0,
-			"synced": false,
-			"rawModeData": ""
+			"time": 1430508172232,
+			"name": "test1",
+			"description": "",
+			"collectionId": "956d4535-63e2-ca26-5bce-fe21516f9d9c",
+			"responses": [],
+			"synced": false
 		}
 	]
 }
