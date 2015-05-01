@@ -1,4 +1,11 @@
 var Newman = require('newman');
+var fs = require('fs');
+var JSON5 = require('json5');
+
+function getOne() {
+	console.log("HEY WE ARE IN CUSTOM CODE");
+	return 22;
+}
 
 // read the collectionjson file
 var collectionJson = JSON5.parse(fs.readFileSync("HACK.json", 'utf8'));
@@ -6,8 +13,8 @@ var collectionJson = JSON5.parse(fs.readFileSync("HACK.json", 'utf8'));
 // define Newman options
 newmanOptions = {
     //envJson: JSON5.parse(fs.readFileSync("envjson.json", "utf-8")), // environment file (in parsed json format)
-    dataFile: data.csv,                    // data file if required
-    iterationCount: 10,                    // define the number of times the runner should run
+    //dataFile: data.csv,                    // data file if required
+    iterationCount: 1,                    // define the number of times the runner should run
     outputFile: "outfile.json",            // the file to export to
     //responseHandler: "TestResponseHandler", // the response handler to use
     asLibrary: true,                        // this makes sure the exit code is returned as an argument to the callback function
@@ -15,4 +22,6 @@ newmanOptions = {
 }
 
 // Optional Callback function which will be executed once Newman is done executing all its tasks.
-Newman.execute(collectionJson, newmanOptions, callback);
+Newman.execute(collectionJson, newmanOptions, function() {
+	console.log("Ran newman");
+});
