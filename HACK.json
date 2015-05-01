@@ -31,7 +31,7 @@
 			"time": 1430503513139,
 			"version": 2,
 			"responses": [],
-			"tests": "tests['A valid integer'] = 2 === 1;",
+			"tests": "tests['valid integer'] = 1 === 1;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionOwner": 0,
