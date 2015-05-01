@@ -1,0 +1,42 @@
+{
+	"id": "956d4535-63e2-ca26-5bce-fe21516f9d9c",
+	"name": "HACK",
+	"description": "",
+	"order": [
+		"f4898fec-a2ae-a25c-1849-92093c8c7455"
+	],
+	"folders": [],
+	"timestamp": 1430503420378,
+	"synced": false,
+	"owner": "40527",
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "f4898fec-a2ae-a25c-1849-92093c8c7455",
+			"headers": "",
+			"url": "http://www.google.com",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "956d4535-63e2-ca26-5bce-fe21516f9d9c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "test1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1430503513139,
+			"version": 2,
+			"responses": [],
+			"tests": "tests['A valid integer'] = 2 === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false,
+			"rawModeData": ""
+		}
+	]
+}
