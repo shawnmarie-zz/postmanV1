@@ -3,7 +3,7 @@
 	"name": "HACK",
 	"description": "",
 	"order": [
-		"f4898fec-a2ae-a25c-1849-92093c8c7455"
+		"f4898fec-a2ae-a25c-1849-92093c8c7455", "29025cbf-1f5a-2e30-0140-1635091e2500"
 	],
 	"folders": [],
 	"timestamp": 1430503420378,
@@ -25,15 +25,35 @@
 			"data": [],
 			"dataMode": "params",
 			"version": 2,
-			"tests": "tests['valid integer'] = getOne() === 2;",
+			"tests": "tests['valid integer'] = 2 === 2;tests['valid boolean'] = true === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1430508172232,
-			"name": "test1",
+			"name": "Story:6150",
 			"description": "",
 			"collectionId": "956d4535-63e2-ca26-5bce-fe21516f9d9c",
 			"responses": [],
 			"synced": false
-		}
+		},
+		{
+			"id": "29025cbf-1f5a-2e30-0140-1635091e2500",
+			"headers": "",
+			"url": "http://www.google.com",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests['valid integer 4'] = 4 === 4;tests['valid name'] = 'V1' === 'V1';",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430508172232,
+			"name": "Story:6155",
+			"description": "",
+			"collectionId": "956d4535-63e2-ca26-5bce-fe21516f9d9c",
+			"responses": [],
+			"synced": false
+		}		
 	]
 }
