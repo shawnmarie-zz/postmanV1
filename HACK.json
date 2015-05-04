@@ -25,7 +25,7 @@
 			"data": [],
 			"dataMode": "params",
 			"version": 2,
-			"tests": "tests['valid integer'] = 2 === 2;",
+			"tests": "tests['valid integer'] = getOne() === 2;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1430508172232,

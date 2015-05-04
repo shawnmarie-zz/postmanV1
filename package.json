@@ -5,7 +5,9 @@
   "main": "runTests.js",
   "dependencies": {
     "json5": "~0.4.0",
-    "newman": "~1.2.15"
+    "newman": "git+https://github.com/iVantage/Newman.git#4eff11608b172e561bf0ecaf15c878709071ef14",
+    "axios": "^0.5.4",
+    "btoa": "^1.1.2"
   },
   "devDependencies": {},
   "scripts": {
