@@ -1,8 +1,8 @@
 var Newman = require('newman'),
   fs = require('fs'),
   JSON5 = require('json5'),
-  baseApiUrl = 'http://localhost/versionone/rest-1.v1/Data/',
-  baseHostUrl = 'http://localhost',
+  baseApiUrl = 'https://www14.v1host.com/v1sdktesting/rest-1.v1/Data/',
+  baseHostUrl = 'https://www14.v1host.com',
   _ = require('lodash'),
   v1hal = require('./lib/v1hal')(baseHostUrl),
   util = require('util');
