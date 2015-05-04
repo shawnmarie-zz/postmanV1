@@ -1,7 +1,7 @@
 var Newman = require('newman'),
     fs = require('fs'),
     JSON5 = require('json5'),
-    baseApiUrl = 'https://www14.v1host.com/v1sdktesting/rest-1.v1/Data',
+    baseApiUrl = 'https://www14.v1host.com/v1sdktesting/rest-1.v1/Data/',
     baseHostUrl = 'https://www14.v1host.com',
     v1hal = require('./lib/v1hal')(baseHostUrl);
 
@@ -10,9 +10,9 @@ global.getOne = function() {
 	return 2;
 }
 
-console.log(baseApiUrl + '/Story');
+console.log(baseApiUrl + 'Story');
 
-v1hal.post(baseApiUrl + '/Story', {
+v1hal.post(baseApiUrl + 'Story', {
     _links: {
         'Scope': { idref: 'Scope:0' }
     },
