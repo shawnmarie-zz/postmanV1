@@ -195,8 +195,6 @@ var IterationRunner = jsface.Class([Options, EventEmitter], {
             Globals.envJson = currentGlobalEnv;
         } else {
             var results = this._exportResponses();
-            // NEW:
-            this.emit('iterationRunnerResultsAvailable', results);
             this.emit('iterationRunnerOver', Globals.exitCode);
 
             if(Globals.updateMessage) {
