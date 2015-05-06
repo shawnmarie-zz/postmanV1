@@ -9,7 +9,8 @@
     "json5": "~0.4.0",
     "lodash": "^3.8.0",
     "lodash-deep": "^1.6.0",
-    "newman": "git+https://github.com/iVantage/Newman.git#4eff11608b172e561bf0ecaf15c878709071ef14"
+    "newman": "git+https://github.com/iVantage/Newman.git#4eff11608b172e561bf0ecaf15c878709071ef14",
+    "q-io": "^1.12.0"
   },
   "devDependencies": {},
   "scripts": {
