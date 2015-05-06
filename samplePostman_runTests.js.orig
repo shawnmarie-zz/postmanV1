@@ -66,9 +66,13 @@ FS.isFile(configFileName)
     Newman.addEventListener("iterationRunnerResultsAvailable", function(response) {
       var map = {};
       _.forEach(response.results, function(item) {
+<<<<<<< Updated upstream
         var name = getAssetOid(item.name);
         map[item.id] = name;
+=======
+        map[item.id] = item.name,
         map[item.totalPassFailCounts.fail] = item.testStatus;
+>>>>>>> Stashed changes
       });
 
       _.forEach(map, function(storyNumber, postmanTestId) {
