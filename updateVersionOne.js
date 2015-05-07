@@ -67,7 +67,8 @@ FS.isFile(configFileName)
       testDataMap[item.id] = {
         assetOid: assetOid,
         name: item.name,
-        failCount: item.totalPassFailCounts.fail
+        failCount: item.totalPassFailCounts.fail,
+        testAssertResults: JSON.stringify(item.testPassFailCounts)
       };
     });
 
@@ -80,7 +81,8 @@ FS.isFile(configFileName)
             Status: {
               idref: getV1TestStatusFromPostmanFailCount(testData.failCount)
             }
-          }
+          },
+          Description: testData.testAssertResults
         })
           .then(function(res) {
             console.log('Successfully updated existing V1 Test asset:');
@@ -100,7 +102,8 @@ FS.isFile(configFileName)
               idref: getV1TestStatusFromPostmanFailCount(testData.failCount)
             }
           },
-          Name: testData.name
+          Name: testData.name,
+          Description: testData.testAssertResults
         })
           .then(function(res) {
             var id = res.data._links.self.id;
